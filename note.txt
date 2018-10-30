@@ -1,0 +1,250 @@
+http://learn-automation.com/selenium-integration-with-jenkins/
+https://www.udemy.com/
+a[class^='color'] -starts with 
+a[class*='phone']-contains with
+a[class$='link'] -endwith
+
+# id name
+.class name
+To represent multiple values with single variable we use arrays
+
+1.Arrays are fixed in size(should know the size in advance)
+2.It can hold only homogenous data type elements(can be resolved with object type of arrays)
+Ex:Student [] s = new Student[10000]
+s[0] = new Student; -correct
+s[1] = new Customer;        
+
+can overcome by object type
+object[] a = new object[1000];
+a[0] = new student;
+a[1] = new customer;
+
+
+3.Not implimented based on standard data structure(Ready made support method cant be expected
+4.with respect to memory Arrays are not recomended
+5.performance wise it is good
+6.we can hold premitives and objects
+ex:int[] and integer[]
+
+
+Collections
+1.Growable in nature(can increase or decrease the size)
+>>performance wise not upto the mark
+2.Can hold homogenous and heterogenous objects
+3.Developed based on some standard data structure
+4.With respect to memory it is recomended
+5.Performance wise it is not good
+6.We can hold only objects,but not premitives
+
+
+
+Primary Key
+------------
+Primary key uniquely identify a record in the table.	
+Foreign key is a field in the table that is primary key in another table.
+Primary Key can't accept null values.	
+Foreign key can accept multiple null value.
+By default, Primary key is clustered index and data in the database table is physically organized in the sequence of clustered index.	
+Foreign key do not automatically create an index, clustered or non-clustered. You can manually create an index on foreign key.
+We can have only one Primary key in a table.	
+We can have more than one foreign key in a table.
+
+
+Exceptions and Errors
+-----------------------
+Errors in java are of type java.lang.Error.	
+Exceptions in java are of type java.lang.Exception.
+All errors in java are unchecked type.	
+Exceptions include both checked as well as unchecked type.
+Errors happen at run time. They will not be known to compiler.	
+Checked exceptions are known to compiler where as unchecked exceptions are not known to compiler because they occur at run time.
+It is impossible to recover from errors.	
+You can recover from exceptions by handling them through try-catch blocks.
+Errors are mostly caused by the environment in which application is running.	
+Exceptions are mainly caused by the application itself.
+Examples :
+java.lang.StackOverflowError, java.lang.OutOfMemoryError	
+Examples :
+Checked Exceptions : SQLException, IOException
+Unchecked Exceptions : ArrayIndexOutOfBoundException, ClassCastException, NullPointerException
+
+
+equal and == operator
+-------------------------------
+1.In general we use == operator for reference comparison 	
+   whereas .equals() method for content comparision
+2.equals() is a method defined inside the java.lang.Object class 
+   whereas == is operator
+3.You can’t override the “==” operator. It behaves same for all objects.
+  You can override the equals method
+4.== It can be used on both primitive types as well as on object types.  
+  .equals() is used for object types
+5.== parent child relationship should be there, else it will throw error
+  .equals() parent child relationship not required
+  
+
+Class and Objects
+-------------------------------
+Class is an template of an object and object is an instance of a class
+
+Abstract Class
+-----------------------------
+Abstract at class level
+
+1. A class defined as abstract cannot be instantiated
+2. A normal class extending abstract class should override all abstract methods
+3. If subclass does not override abstract method, it should mark itself as abstract
+4. Abstarct classes need not have abstract methods
+5. Abstract classes can have constructor
+6. Constructors of abstarct classes are invoked when a subclass object is created 	
+ 
+At method level
+1.When a method is marked as abstract there should not be any implimentation for that 
+public abstract void call();
+2.Abstarct methods are meant to be overridden in subclass
+3.If there is abstract method then whole class should be declared as abstract
+4.Methods marked as static,final and private cannot be abstract	
+
+
+Interfaces
+------------
+1.They do not have any method implementation
+2.All methods in interface are public and abstract
+3.Any field declared as public final and static
+public interface president{
+  int age Limit =50;
+  public abstarct void winPoll();
+  public abstarct void makelaw();
+ }
+ 
+4.All the methods of interface are abstract and should be overridden in subclass
+5.If a class implements interface and doesnot override the method,it should be marked as abstract
+6.It can extend any number of interfaces
+7.Concrete and abstract classes implement interfaces
+ 
+
+Smoke Testing and Sanity Testing
+--------------------------------
+Smoke Testing is performed to ascertain that the critical functionalities of the program is working fine	
+Sanity Testing is done to check the new functionality / bugs have been fixed
+
+The objective of this testing is to verify the "stability" of the system in order to proceed with more rigorous testing	
+The objective of the testing is to verify the "rationality" of the system in order to proceed with more rigorous testing
+
+This testing is performed by the developers or testers	
+Sanity testing is usually performed by testers
+
+Smoke testing is usually documented or scripted	
+Sanity testing is usually not documented and is unscripted
+
+Smoke testing is a subset of Regression testing	
+Sanity testing is a subset of Acceptance testing
+
+Smoke testing exercises the entire system from end to end	
+Sanity testing exercises only the particular component of the entire system
+
+Smoke testing is like General Health Check Up	
+Sanity Testing is like specialized health check up
+
+
+
+A bug is the result of a coding error
+
+A defect is a deviation from the requirements
+
+findElement()
+
+On Zero Match : throws NoSuchElementException
+On One Match : returns WebElement
+On One+ Match : returns the first appearance in DOM 
+
+findElements()
+
+On Zero Match : return an empty list
+On One Match : returns list of one WebElement only
+On One+ Match : returns list with all matching instance
+
+Abstract class	Interface
+1) Abstract class can have abstract and non-abstract methods.	Interface can have only abstract methods.
+2) Abstract class doesn't support multiple inheritance.	Interface supports multiple inheritance.
+3) Abstract class can have final, non-final, static and non-static variables.	Interface has only static and final variables.
+4) Abstract class can have static methods, main method and constructor.	Interface can't have static methods, main method or constructor.
+5) Abstract class can provide the implementation of interface.	Interface can't provide the implementation of abstract class.
+6) The abstract keyword is used to declare abstract class.	The interface keyword is used to declare interface.
+
+
+Assert:
+
+It is a class in testng which helps to validate certain output
+
+
+git log --oneline
+git show head
+git remote -v (shows the url)
+git show hashid
+./config folder stores the url
+git branch (to see all branches)
+git tags
+git branch --set-upstream master origin/master
+git pull
+git remote add origin remote repository URL
+git tag v1.0
+git push --tags
+
+git branch <name> --To create a new branch
+git branch -a --To get list of all the branches in the respective repository
+git checkout <branchname> --To switch to respective branch
+git branch -d <branchname> --(to delete a branch)
+git merge <branchname> --To move the code from branch to master
+git fetch origin master
+git push origin <branchname> To move the code to respective branch
+git branch -r
+git push origin <localbranchname>:<remotebranchname>
+git push origin :<remote branch name>(to delete remote branch)
+
+The main differences between GIT and SVN are:
+1. Decentralized: GIT is decentralized. You have a local
+copy that is a repository in which you can commit. In SVN
+you have to always connect to a central repository for
+check-in.
+2. Complex to learn: GIT is a bit difficult to learn for some
+developers. It has more concepts and commands to learn.
+SVN is much easier to learn.
+3. Unable to handle Binary files: GIT becomes slow when it
+deals with large binary files that change frequently. SVN
+can handle large binary files easily.
+4. Internal directory: GIT creates only .git directory. SVN
+creates .svn directory in each folder.
+5. User Interface: GIT does not have good UI. But SVN has
+good user interfaces.
+
+Jenkins
+pipeline {
+    agent any 
+    stages {
+        stage('code pull') { 
+            steps {
+               
+                bat "git clone https://github.com/pknowledge/my-app.git"
+            }
+        }
+        stage('Test') { 
+            steps {
+                bat "mvn test -f my-app"
+            }
+        }
+        stage('Deploy') { 
+            steps {
+                 bat "mvn package -f my-app"
+            }
+        }
+    }
+}
+
+The functionality of Enumeration and the Iterator are same. 
+You can get remove() from Iterator to remove an element, while Enumeration does not have remove() method. Using Enumeration you can only traverse and fetch the objects, where as using Iterator we can also add and remove the objects. So Iterator can be useful if you want to manipulate the list and Enumeration is for read-only access. - See more at: http://www.java2novice.com/java_interview_questions/enumeration-iterator-difference/#sthash.TlEqGDFW.dpuf
+
+
+-c: ("Concurrency"). Indicates how many clients (people/users) will be hitting the site at the same time. While ab runs, there will be -c clients hitting the site. This is what actually decides the amount of stress your site will suffer during the benchmark.
+
+-n: Indicates how many requests are going to be made. This just decides the length of the benchmark. A high -n value with a -c value that your server can support is a good idea to ensure that things don't break under sustained stress: it's not the same to support stress for 5 seconds than for 5 hours.
