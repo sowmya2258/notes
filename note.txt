@@ -1,5 +1,8 @@
 http://learn-automation.com/selenium-integration-with-jenkins/
+https://addons.mozilla.org/en-US/firefox/addon/chropath-for-firefox/
+https://www.softwaretestingmaterial.com/testng-tutorial/
 https://www.udemy.com/
+
 a[class^='color'] -starts with 
 a[class*='phone']-contains with
 a[class$='link'] -endwith
@@ -180,7 +183,7 @@ It is a class in testng which helps to validate certain output
 
 git log --oneline
 git show head
-git remote -v (shows the url)
+git remote -v (shows the remote url)
 git show hashid
 ./config folder stores the url
 git branch (to see all branches)
@@ -219,6 +222,7 @@ creates .svn directory in each folder.
 good user interfaces.
 
 Jenkins
+
 pipeline {
     agent any 
     stages {
