@@ -175,6 +175,20 @@ Abstract class	Interface
 5) Abstract class can provide the implementation of interface.	Interface can't provide the implementation of abstract class.
 6) The abstract keyword is used to declare abstract class.	The interface keyword is used to declare interface.
 
+Frame work
+src/main/java - 
+
+1)base package-----
+
+base class- 
+
+2)utlility pack-- locators,csv,ecxel
+
+3)config pack -- 
+
+4)page object/page factory -- 
+we write methods in it
+
 
 Assert:
 
